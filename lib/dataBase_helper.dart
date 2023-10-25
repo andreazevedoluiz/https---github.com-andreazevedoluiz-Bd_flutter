@@ -70,6 +70,7 @@ CREATE TABLE $table(
 
   //Assumidos aqui aque a coluna id no mapa está definida. Os outros valores
   //das colunas serão usados para atualizar a linha.
+  //--------
 
   Future<int> update(Map<String, dynamic> row) async {
     Database db = await instance.database;
