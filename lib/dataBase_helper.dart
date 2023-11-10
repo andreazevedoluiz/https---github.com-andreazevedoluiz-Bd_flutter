@@ -32,8 +32,8 @@ class DataBaseHelper {
   Future _onCreate(Database db, int version) async {
     await db.execute('''
 CREATE TABLE $table(
-  $columnId INTERGER PRIMARY KEY,
-  $columNome TEXT NO NULL,
+  $columnId INTEGER PRIMARY KEY,
+  $columNome TEXT NOT NULL,
   $columIdade INTEGER NOT NULL
   )
   ''');
